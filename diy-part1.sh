@@ -21,3 +21,4 @@
 #echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
 echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
+echo "src-git themeArgon https://github.com/jerrykuku/luci-theme-argon.git;18.06" >> feeds.conf.default
