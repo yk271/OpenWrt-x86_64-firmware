@@ -24,5 +24,5 @@ echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> 
 
 git clone -b beta  https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 
-rm -rf package/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
