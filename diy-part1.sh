@@ -15,8 +15,8 @@
 
 # Add a feed source
 echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
-#echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
-echo "src-git PWluci https://github.com/yk271/openwrt-passwall;luci-20220412" >> feeds.conf.default
+echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
+#echo "src-git PWluci https://github.com/yk271/openwrt-passwall;luci-20220412" >> feeds.conf.default
 
 #git clone -b beta https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 git clone https://github.com/yk271/luci-app-adguardhome.git package/luci-app-adguardhome
