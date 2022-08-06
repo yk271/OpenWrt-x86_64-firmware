@@ -17,5 +17,5 @@
 git clone https://github.com/kenzok8/small-package
 cp -r ./small-package/luci-app-adguardhome ./package
 cp -r ./small-package/adguardhome ./package
-rm -rf ./package/adguardhome/patches
+rm -rf ./package/adguardhome/patches/default_username.patch
 rm -rf ./small-package
