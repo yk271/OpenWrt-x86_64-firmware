@@ -22,4 +22,4 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./packag
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
 
 # Arogn Theme
-git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
