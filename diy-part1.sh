@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+# Modify default passwd
+sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' ./package/lean/default-settings/files/zzz-default-settings
+
 # Adguard Home
 git clone https://github.com/kenzok8/small-package
 cp -r ./small-package/luci-app-adguardhome ./package
