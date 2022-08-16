@@ -10,5 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
+# Remove Default Package
 rm -rf ./feeds/packages/net/adguardhome
+rm -rf ./feeds/luci/themes/luci-theme-argon
