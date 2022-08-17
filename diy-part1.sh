@@ -20,6 +20,10 @@ sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' ./package/lean/default-settings/
 git clone https://github.com/kenzok8/small-package
 cp -r ./small-package/luci-app-adguardhome ./package
 cp -r ./small-package/adguardhome ./package
+cp -r ./small-package/luci-app-poweroff ./package
+cp -r ./small-package/luci-app-aliddns ./package
+cp -r ./small-package/luci-app-tencentddns ./package
+
 rm -rf ./package/adguardhome/patches
 rm -rf ./small-package
 
