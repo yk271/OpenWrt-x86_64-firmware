@@ -17,15 +17,12 @@
 sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' ./package/lean/default-settings/files/zzz-default-settings
 
 # 添加软件源码
-git clone https://github.com/kenzok8/small-package
-cp -r ./small-package/luci-app-adguardhome ./package
-cp -r ./small-package/adguardhome ./package
+svn export https://github.com/kenzok8/small-package/trunk/luci-app-adguardhome ./package/luci-app-adguardhome
+svn export https://github.com/kenzok8/small-package/trunk/adguardhome ./package/adguardhome
 rm -rf ./package/adguardhome/patches
-cp -r ./small-package/luci-app-poweroff ./package
-cp -r ./small-package/luci-app-aliddns ./package
-cp -r ./small-package/luci-app-tencentddns ./package
-
-rm -rf ./small-package
+svn export https://github.com/kenzok8/small-package/trunk/luci-app-poweroff ./package/luci-app-poweroff
+svn export https://github.com/kenzok8/small-package/trunk/luci-app-aliddns ./package/luci-app-aliddns
+svn export https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns/trunk/tencentcloud_ddns ./package/luci-app-tencentddns
 
 # Passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
