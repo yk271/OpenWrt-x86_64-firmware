@@ -10,10 +10,13 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# Modify default passwd
+# 修改内核版本
+# sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.19/g' ./target/linux/x86/Makefile
+
+# 删除密码
 sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' ./package/lean/default-settings/files/zzz-default-settings
 
-# Adguard Home
+# 添加软件源码
 git clone https://github.com/kenzok8/small-package
 cp -r ./small-package/luci-app-adguardhome ./package
 cp -r ./small-package/adguardhome ./package
@@ -24,5 +27,5 @@ rm -rf ./small-package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
 
-# Arogn Theme
+# Arogn theme
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
