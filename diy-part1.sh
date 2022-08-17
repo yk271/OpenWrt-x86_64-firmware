@@ -20,7 +20,8 @@ sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' ./package/lean/default-settings/
 svn export https://github.com/kenzok8/small-package/trunk/luci-app-adguardhome ./package/luci-app-adguardhome
 svn export https://github.com/kenzok8/small-package/trunk/adguardhome ./package/adguardhome
 rm -rf ./package/adguardhome/patches
-svn export https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns/trunk/tencentcloud_ddns ./package/luci-app-tencentddns
+svn export https://github.com/kenzok8/small-package/trunk/luci-app-tencentddns ./package/luci-app-tencentddns
+svn export https://github.com/kenzok8/small-package/trunk/luci-app-aliddns ./package/luci-app-aliddns
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
