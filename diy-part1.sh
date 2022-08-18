@@ -21,8 +21,7 @@ svn export https://github.com/kenzok8/small-package/trunk/luci-app-adguardhome .
 svn export https://github.com/kenzok8/small-package/trunk/adguardhome ./package/adguardhome
 rm -rf ./package/adguardhome/patches
 
-svn export https://github.com/kenzok8/small-package/trunk/luci-app-aliddns ./package/luci-app-aliddns
-git clone https://github.com/yk271/luci-app-tencentddns.git ./package/luci-app-tencentddns
+git clone https://github.com/yk271/openwrt-ddns-app.git ./package/openwrt-ddns-app
 
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
