@@ -21,7 +21,6 @@ svn export https://github.com/kenzok8/small-package/trunk/luci-app-adguardhome .
 svn export https://github.com/kenzok8/small-package/trunk/adguardhome ./package/adguardhome
 rm -rf ./package/adguardhome/patches
 
-svn export https://github.com/kenzok8/small-package/trunk/luci-app-tencentddns ./package/luci-app-tencentddns
 svn export https://github.com/kenzok8/small-package/trunk/luci-app-aliddns ./package/luci-app-aliddns
 
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
@@ -31,3 +30,4 @@ wget https://fastly.jsdelivr.net/gh/yk271/proxy-rule/proxy_host.txt -O ./package
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
 git clone https://github.com/esirplayground/luci-app-poweroff.git ./package/luci-app-poweroff
+git clone https://github.com/yk271/luci-app-tencentddns.git ./package/luci-app-tencentddns
