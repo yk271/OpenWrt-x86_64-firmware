@@ -26,4 +26,4 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/pa
 wget https://fastly.jsdelivr.net/gh/yk271/proxy-rule/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
 wget https://fastly.jsdelivr.net/gh/yk271/proxy-rule/proxy_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
 
-git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
+# git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
