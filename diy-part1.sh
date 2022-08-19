@@ -17,9 +17,7 @@
 sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' ./package/lean/default-settings/files/zzz-default-settings
 
 # 添加软件源码
-svn export https://github.com/kenzok8/small-package/trunk/luci-app-adguardhome ./package/luci-app-adguardhome
-svn export https://github.com/kenzok8/small-package/trunk/adguardhome ./package/adguardhome
-rm -rf ./package/adguardhome/patches
+git clone https://github.com/yk271/luci-app-adguardhome.git ./package/luci-app-adguardhome
 
 git clone https://github.com/yk271/openwrt-ddns-app.git ./package/openwrt-ddns-app
 
