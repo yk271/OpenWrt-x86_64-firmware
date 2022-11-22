@@ -22,8 +22,7 @@ git clone https://github.com/yk271/luci-app-adguardhome.git ./package/luci-app-a
 git clone https://github.com/yk271/openwrt-ddns-app.git ./package/openwrt-ddns-app
 
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
-#git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b 8604b94cccd15319e4d2ed92ce02928a61e5513b ./package/passwall_luci
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/proxy_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
 
