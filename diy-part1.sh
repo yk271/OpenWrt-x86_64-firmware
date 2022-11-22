@@ -30,5 +30,5 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/l
 
 # 【临时】回退 Passwall Luci 版本，排查 DNS 异常的问题
 cd ./package/passwall_luci
-git checkout 0b925ce8920c0c127e26ca9d5e4458ab2eb401db
+git checkout f5391b8884a79efe6c4bfd8cbbfc681fce461e86
 cd ../../
