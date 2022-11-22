@@ -27,3 +27,7 @@ wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O 
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/proxy_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
+
+cd ./package/passwall_luci
+git checkout 8604b94cccd15319e4d2ed92ce02928a61e5513b
+cd ../../
