@@ -12,8 +12,6 @@
 
 # 修改内核版本
 sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.4/g' ./target/linux/x86/Makefile
-# 删除密码
-# sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' ./package/lean/default-settings/files/zzz-default-settings
 
 git clone https://github.com/yk271/luci-app-adguardhome.git ./package/luci-app-adguardhome
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
