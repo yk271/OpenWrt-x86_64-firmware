@@ -12,6 +12,7 @@
 
 # 修改内核版本
 sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.4/g' ./target/linux/x86/Makefile
+sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
 
 git clone https://github.com/yk271/luci-app-adguardhome.git ./package/luci-app-adguardhome
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
