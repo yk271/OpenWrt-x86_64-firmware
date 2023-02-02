@@ -13,7 +13,7 @@
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.15/g' ./target/linux/x86/Makefile
 
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/luci-app-adguardhome
+git clone https://github.com/kongfl888/luci-app-adguardhome.git ./package/luci-app-adguardhome
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
