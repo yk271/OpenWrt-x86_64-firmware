@@ -13,6 +13,9 @@
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.15/g' ./target/linux/x86/Makefile
 
+# 回退 dnsmasq 版本
+git checkout 81a3a0ff39290e874d9ef9c9db52d2dfae9f40ca ./package/network/services/dnsmasq
+
 git clone https://github.com/kongfl888/luci-app-adguardhome.git ./package/luci-app-adguardhome
 git clone https://github.com/yk271/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/yk271/openwrt-passwall.git -b luci ./package/passwall_luci
