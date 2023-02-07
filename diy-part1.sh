@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+# 回退 dnsmasq 版本
+# git checkout 727d803cb09ad4bd2bb1b178f9fd44e9bf1f2595 ./package/network/services/dnsmasq
+
 # git clone https://github.com/yk271/luci-app-adguardhome-1.git ./package/luci-app-adguardhome
 git clone https://github.com/yk271/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/yk271/openwrt-passwall.git -b luci ./package/passwall_luci
