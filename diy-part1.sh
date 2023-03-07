@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-git checkout c2564b980dc41f251a7b010fe665c9176abefc4b ./package/default-settings/files/zzz-default-settings
+# git checkout c2564b980dc41f251a7b010fe665c9176abefc4b ./package/default-settings/files/zzz-default-settings
 
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
