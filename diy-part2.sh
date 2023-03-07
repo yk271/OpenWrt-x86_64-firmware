@@ -13,4 +13,4 @@
 # Remove Default Package
 # rm -rf ./feeds/packages/net/adguardhome
 # rm -rf ./feeds/luci/themes/luci-theme-argon
-# rm -rf ./feeds/other/luci-app-adguardhome
+rm -rf ./feeds/other/luci-app-adguardhome
