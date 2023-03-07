@@ -19,4 +19,4 @@ wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O 
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/proxy_host.txt -O ./ext_package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git ./ext_package/luci-theme-argon-mod
-git clone https://github.com/yk271/luci-app-adguardhome.git ./ext_package/luci-app-adguardhome
+#git clone https://github.com/yk271/luci-app-adguardhome.git ./ext_package/luci-app-adguardhome
