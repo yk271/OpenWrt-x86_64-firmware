@@ -17,8 +17,11 @@
 #git checkout 81a3a0ff39290e874d9ef9c9db52d2dfae9f40ca ./package/network/services/dnsmasq
 
 git clone https://github.com/yk271/luci-app-adguardhome.git ./package/luci-app-adguardhome
+
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/passwall_luci
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/proxy_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
+rm -rf ./package/passwall_luci/luci-app-passwall/root/etc/hotplug.d
+
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon-18.06
