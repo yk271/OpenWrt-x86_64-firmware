@@ -9,3 +9,5 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
+
+git clone https://github.com/yk271/luci-app-adguardhome.git ./package/luci-app-adguardhome
