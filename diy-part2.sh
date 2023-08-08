@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-rm -rf ./package/passwall_luci/luci-app-passwall/root/etc/hotplug.d
+rm -rf ./feeds/luci/applications/luci-app-passwall/root/etc/hotplug.d
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/0_default_config -O ./feeds/luci/applications/luci-app-passwall/root/usr/share/passwall/0_default_config
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./feeds/luci/applications/luci-app-passwall/root/usr/share/passwall/rules/direct_host
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/proxy_host.txt -O ./feeds/luci/applications/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
