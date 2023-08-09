@@ -10,5 +10,5 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-#git clone https://github.com/yk271/luci-app-adguardhome.git ./package/luci-app-adguardhome
+git checkout 064779f9c234d754024801af0955742839e9b9d6
 git clone https://github.com/yk271/openwrt-packages.git ./package/yk271-packages
