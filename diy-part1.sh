@@ -10,5 +10,5 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-git checkout 064779f9c234d754024801af0955742839e9b9d6
+git checkout a76f816d04d130d6c431bdb15e6a136542d458b9
 git clone https://github.com/yk271/openwrt-packages.git ./package/yk271-packages
