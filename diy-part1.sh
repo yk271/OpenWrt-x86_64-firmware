@@ -22,6 +22,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main ./p
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b main ./package/passwall_luci
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/proxy_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
+wget https://raw.githubusercontent.com/yk271/proxy-rule/main/block_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/block_host
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/0_default_config -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/0_default_config
 rm -rf ./package/passwall_luci/luci-app-passwall/root/etc/hotplug.d
 
