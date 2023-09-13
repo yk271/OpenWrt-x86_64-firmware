@@ -16,7 +16,7 @@
 # 回退 dnsmasq 版本
 #git checkout 81a3a0ff39290e874d9ef9c9db52d2dfae9f40ca ./package/network/services/dnsmasq
 
-git clone https://github.com/yk271/openwrt-packages.git ./package/yk271-packages
+#git clone https://github.com/yk271/openwrt-packages.git ./package/yk271-packages
 
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main ./package/passwall_packages
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b main ./package/passwall_luci
