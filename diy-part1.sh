@@ -27,3 +27,4 @@ wget https://raw.githubusercontent.com/yk271/proxy-rule/main/0_default_config -O
 rm -rf ./package/passwall_luci/luci-app-passwall/root/etc/hotplug.d
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06 ./package/luci-theme-argon
+wget https://raw.githubusercontent.com/yk271/OpenWrt-x86_64-firmware/lede-18.06/ExtraFiles/rideshare_feature_compress.jpg -O ./package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
