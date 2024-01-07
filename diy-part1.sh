@@ -18,6 +18,11 @@
 
 #git clone https://github.com/yk271/openwrt-packages.git ./package/yk271-packages
 
+# 修改 firewall 配置，默认开启 fullcone
+wget https://raw.githubusercontent.com/yk271/OpenWrt-x86_64-firmware/lede-18.06/ExtraFiles/firewall.config -O ./package/network/config/firewall/files/firewall.config
+# 修改 dhcp 配置，默认禁用 IPv6 解析、关闭重绑定保护
+wget https://raw.githubusercontent.com/yk271/OpenWrt-x86_64-firmware/lede-18.06/ExtraFiles/dhcp.conf -O ./package/network/services/dnsmasq/files/dhcp.conf
+
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main ./package/passwall_packages
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b main ./package/passwall_luci
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
