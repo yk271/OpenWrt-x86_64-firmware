@@ -25,10 +25,6 @@ wget https://raw.githubusercontent.com/yk271/OpenWrt-x86_64-firmware/lede-18.06/
 wget https://raw.githubusercontent.com/yk271/OpenWrt-x86_64-firmware/lede-18.06/ExtraFiles/dhcp.conf -O ./package/network/services/dnsmasq/files/dhcp.conf
 
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main ./package/passwall_packages
-# 暂时回滚至上一个版本的 sing-box
-cd ./package/passwall_packages
-git reset --hard 4891edc8af1a75ed7ed3c3bab4d111fa68601ca4
-cd ../../
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b main ./package/passwall_luci
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/proxy_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/proxy_host
