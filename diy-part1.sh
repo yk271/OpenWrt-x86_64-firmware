@@ -25,10 +25,6 @@ wget https://raw.githubusercontent.com/yk271/OpenWrt-x86_64-firmware/lede-18.06/
 # 修改 dhcp 配置，默认禁用 IPv6 解析、关闭重绑定保护
 wget https://raw.githubusercontent.com/yk271/OpenWrt-x86_64-firmware/lede-18.06/ExtraFiles/dhcp.conf -O ./package/network/services/dnsmasq/files/dhcp.conf
 
-# golang
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/yk271/packages_lang_golang -b 22.x feeds/packages/lang/golang
-
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main ./package/passwall_packages
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b main ./package/passwall_luci
 wget https://raw.githubusercontent.com/yk271/proxy-rule/main/direct_host.txt -O ./package/passwall_luci/luci-app-passwall/root/usr/share/passwall/rules/direct_host
